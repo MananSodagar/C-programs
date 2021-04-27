@@ -5,7 +5,7 @@ using namespace std;
 class Leap_Year{
 
     public:
-    bool leap(int n)
+    bool leap(int n) // returns true if the year is leap or false if it is not.
     {
 
        if(n % 400 == 0)
@@ -31,7 +31,7 @@ int main()
   bool result;
   char temp = 'Y';
 
-    cout<<"Welcome"<<endl;
+    cout<<"\t === Welcome === \t"<<endl;
 
     while ( temp == 'Y')
     {
@@ -45,10 +45,14 @@ int main()
         result=myObj.leap(n);
         if(result==true)
             {
-            cout<<"===This year is a leap year==="<<endl;
+            cout<<"^------------------------^"<<endl;
+            cout<<"|This year is a leap year|"<<endl;
+            cout<<"v------------------------v"<<endl;
             }
         else{
-            cout<<"===This year is not a leap year==="<<endl;
+            cout<<"^----------------------------^"<<endl;
+            cout<<"|This year is not a leap year|"<<endl;
+            cout<<"v----------------------------v"<<endl;
             }
 
         cout<<"Do you want to check for another year?"<<endl;
@@ -58,6 +62,7 @@ int main()
         {
             exit(0);
         }
+        system("CLS");
      }
 
 return 0;
