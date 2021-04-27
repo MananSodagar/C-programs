@@ -5,10 +5,10 @@ using namespace std;
 class Factorial{
 
     public:
-    long int fact(int n)// method for calculating factorial of n numbers
+    long double fact(int n)//we are using long double for finding factorial of large numbers like 76,88,100 etc.
     {
           int i;
-          long int factorial_sum=1;
+          long double factorial_sum=1;
           for(i=1;i<=n;i++)// we are using here iterative approach, we can also do the same using recursive approach
            {
             factorial_sum=factorial_sum*i;
@@ -20,9 +20,9 @@ class Factorial{
 int main()
 {
   int n;
-
   char temp = 'Y';
-  cout<<"Welcome"<<endl;
+  cout<<"\t=== FIND FACTORIAL FOR POSITIVE NUMBERS ===\t"<<endl;
+
 
    while ( temp == 'Y')
    {
@@ -34,14 +34,14 @@ int main()
 
         if(n<0 || n==0) // checks if input is 0 or -ve it terminates the program
         {
-           cout<<"The number is invalid \t";
+           cout<<"\t\'The number is invalid\' \t";
            exit(0);  //  immediately terminates the program
         }
 
         Factorial myObj;
-        long int result;
+        long double result;
         result=myObj.fact(n);
-        cout<<"the factorial of number is: \t" << result<<endl;
+        cout<<"the factorial of number is: \t" <<result<<endl;
 
          cout<<"Do you want to find for another Number?"<<endl;
          cout<<"Enter Y for YES and any key for NO"<<endl;
