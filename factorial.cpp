@@ -21,13 +21,15 @@ int main()
 {
   int n;
   char temp = 'Y';
-  cout<<"\t=== FIND FACTORIAL FOR POSITIVE NUMBERS ===\t"<<endl;
+
 
 
    while ( temp == 'Y')
    {
 
 
+
+        cout<<"\t=== FIND FACTORIAL FOR POSITIVE NUMBERS ===\t"<<endl;
         cout<<"warning: if you enter 0 or Negative number, the program will close automatically"<<endl;
         cout<<"Enter the positive number :\t";
         cin>>n;
@@ -50,6 +52,8 @@ int main()
             {
                 exit(0);
             }
+        system("CLS");
+
 
     }
 

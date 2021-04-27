@@ -31,10 +31,12 @@ int main()
   bool result;
   char temp = 'Y';
 
-    cout<<"\t === Welcome === \t"<<endl;
+
 
     while ( temp == 'Y')
     {
+
+        cout<<"\t === Welcome === \t"<<endl;
         cout<<"Enter the year: \t";
         cin>>n;
         if(cin.fail()) // checks whether the input is an integer or not
@@ -55,15 +57,17 @@ int main()
             cout<<"v----------------------------v"<<endl;
             }
 
-        cout<<"Do you want to check for another year?"<<endl;
-        cout<<"Enter Y for YES and any key for NO"<<endl;
-        cin>>temp;
-        if(temp != 'Y')
-        {
+         cout<<"Do you want to check for another year?"<<endl;
+         cout<<"Enter Y for YES and any key for NO"<<endl;
+         cin>>temp;
+         if(temp != 'Y')
+         {
             exit(0);
-        }
-        system("CLS");
+         }
+         system("CLS");
+
      }
+
 
 return 0;
 
