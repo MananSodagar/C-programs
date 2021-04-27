@@ -1,3 +1,4 @@
+/* MANAN SODAGAR(532651)*/
 #include<iostream>
 using namespace std;
 
@@ -52,7 +53,8 @@ int main()
             {
                 exit(0);
             }
-        system("CLS");
+        system("cls"); //TurboC Compiler
+        //system("clear");  //gcc/g++ compiler in Linux
 
 
     }

@@ -1,3 +1,5 @@
+/* MANAN SODAGAR(532651)*/
+
 #include<iostream>
 using namespace std;
 
@@ -36,7 +38,7 @@ int main()
     while ( temp == 'Y')
     {
 
-        cout<<"\t === Welcome === \t"<<endl;
+        cout<<"\t=== CHECK WHETER THE YEAR IS LEAP OR NOT ===\t"<<endl;
         cout<<"Enter the year: \t";
         cin>>n;
         if(cin.fail()) // checks whether the input is an integer or not
@@ -64,7 +66,9 @@ int main()
          {
             exit(0);
          }
-         system("CLS");
+         system("cls"); //TurboC Compiler
+         //system("clear");  gcc/g++ compiler in Linux
+
 
      }
 
